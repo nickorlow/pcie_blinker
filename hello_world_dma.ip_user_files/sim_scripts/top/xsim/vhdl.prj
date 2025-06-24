@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/top/ip/top_axi_bram_ctrl_0_0/sim/top_axi_bram_ctrl_0_0.vhd" \
+"../../../bd/top/ip/top_axi_gpio_0_0/sim/top_axi_gpio_0_0.vhd" \
+"../../../bd/top/ip/top_util_ds_buf_0/util_ds_buf.vhd" \
+"../../../bd/top/ip/top_util_ds_buf_0/sim/top_util_ds_buf_0.vhd" \
+"../../../bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/sim/bd_b43a_psr_aclk_0.vhd" \
+
+nosort

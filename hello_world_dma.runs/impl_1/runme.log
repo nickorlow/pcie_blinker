@@ -1,0 +1,1232 @@
+
+*** Running vivado
+    with args -log top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.531 ; gain = 5.961 ; free physical = 2005 ; free virtual = 4895
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nickorlow/vivado/inst_22.01/Vivado/2022.1/data/ip'.
+Command: link_design -top top_wrapper -part xc7a100tlfgg484-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tlfgg484-2L
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_bram_ctrl_0_0/top_axi_bram_ctrl_0_0.dcp' for cell 'top_i/axi_bram_ctrl_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.dcp' for cell 'top_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/top_axi_smc_0.dcp' for cell 'top_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0.dcp' for cell 'top_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0.dcp' for cell 'top_i/util_ds_buf'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0.dcp' for cell 'top_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0.dcp' for cell 'top_i/xdma_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2607.531 ; gain = 0.000 ; free physical = 1596 ; free virtual = 4486
+INFO: [Netlist 29-17] Analyzing 1873 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-1115] Found multi-term driver net: top_i/util_ds_buf/U0/<const0>.
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_clkreq_l'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pcie_clkreq_l'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc]
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+CRITICAL WARNING: [Vivado 12-2285] Cannot set LOC property of instance 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtp_channel.gtpe2_channel_i'... top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtp_channel.gtpe2_channel_i Instance top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtp_channel.gtpe2_channel_i can not be placed in GTPE2_CHANNEL of site GTPE2_CHANNEL_X0Y7 because the bel is occupied by top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtp_channel.gtpe2_channel_i. This could be caused by bel constraint conflict [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:94]
+Resolution: When using BEL constraints, ensure the BEL constraints are defined before the LOC constraints to avoid conflicts at a given site.
+CRITICAL WARNING: [Vivado 12-2285] Cannot set LOC property of instance 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtp_channel.gtpe2_channel_i'... top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtp_channel.gtpe2_channel_i Instance top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtp_channel.gtpe2_channel_i can not be placed in GTPE2_CHANNEL of site GTPE2_CHANNEL_X0Y6 because the bel is occupied by top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtp_channel.gtpe2_channel_i. This could be caused by bel constraint conflict [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:96]
+Resolution: When using BEL constraints, ensure the BEL constraints are defined before the LOC constraints to avoid conflicts at a given site.
+CRITICAL WARNING: [Vivado 12-2285] Cannot set LOC property of instance 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtp_channel.gtpe2_channel_i'... top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtp_channel.gtpe2_channel_i Instance top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtp_channel.gtpe2_channel_i can not be placed in GTPE2_CHANNEL of site GTPE2_CHANNEL_X0Y4 because the bel is occupied by top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtp_channel.gtpe2_channel_i. This could be caused by bel constraint conflict [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc:100]
+Resolution: When using BEL constraints, ensure the BEL constraints are defined before the LOC constraints to avoid conflicts at a given site.
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc] for cell 'top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0_board.xdc] for cell 'top_i/xdma_0/inst'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0_board.xdc] for cell 'top_i/xdma_0/inst'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/source/top_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'top_i/xdma_0/inst'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/source/top_xdma_0_0_pcie3_7vx_ip.xdc] for cell 'top_i/xdma_0/inst'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_board.xdc] for cell 'top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_board.xdc] for cell 'top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xdc] for cell 'top_i/axi_gpio_0/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xdc] for cell 'top_i/axi_gpio_0/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0_board.xdc] for cell 'top_i/util_ds_buf/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0_board.xdc] for cell 'top_i/util_ds_buf/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/bd_b43a_psr_aclk_0_board.xdc] for cell 'top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/bd_b43a_psr_aclk_0_board.xdc] for cell 'top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/bd_b43a_psr_aclk_0.xdc] for cell 'top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/bd_b43a_psr_aclk_0.xdc] for cell 'top_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/normal.xdc]
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/normal.xdc]
+INFO: [Project 1-1714] 32 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2746.434 ; gain = 0.000 ; free physical = 1234 ; free virtual = 4124
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 682 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 50 instances
+  RAM16X1S => RAM32X1S (RAMS32): 13 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 577 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+18 Infos, 19 Warnings, 21 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 2746.434 ; gain = 138.902 ; free physical = 1234 ; free virtual = 4124
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100tl'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2810.465 ; gain = 64.031 ; free physical = 1191 ; free virtual = 4082
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16126b4a2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2810.465 ; gain = 0.000 ; free physical = 1177 ; free virtual = 4067
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter top_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/save_init_bram_addr_ld[15]_i_1 into driver instance top_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/I_WRAP_BRST/GEN_AWREADY.axi_awready_int_i_3, which resulted in an inversion of 10 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_mm_master_rd/barval_ff[1]_i_2__0 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_mm_master_rd/m_axi_rready_ff_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/m_axi_awsizeq_reg_0_3_0_2_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/m_axi_awsizeq_reg_0_3_0_2_i_6, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.aximm.dma_aximm/axi4mm_axi_mm_master_rd/rresp_claim_any_ff_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.aximm.dma_aximm/axi4mm_axi_mm_master_rd/rresp_claim_any_ff_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/RD/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/reg_sts_hlt_nn1_i_1__1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/RD/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/i___9_i_1, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/RD/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/reg_sts_hlt_nn1_i_1__2 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/RD/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___84_i_1, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/ch_arb_ch_nn1[0]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/ch_arb_ch_nn1[0]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/ch_arb_ch_nn1[1]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/ch_arb_ch_nn1[1]_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_adr_nn1[2][5]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_adr_nn1[2][5]_i_2, which resulted in an inversion of 13 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_adr_nn1[2][6]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_adr_nn1[2][6]_i_2, which resulted in an inversion of 12 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_len_rem_nn1[2][6]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/dsc_eng.DSC/chn_rrq_len_rem_nn1[2][6]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/m_axis_rq_thead_d_ff[0][63]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rdIssued_ff[0]_i_2, which resulted in an inversion of 28 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][1]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][1]_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][3]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][3]_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][5]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][5]_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][7]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][rcb][7]_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff[0][tag][5]_i_1 into driver instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_vld_ff[0]_i_3, which resulted in an inversion of 4 pins
+INFO: [Opt 31-138] Pushed 15 inverter(s) to 207 load pin(s).
+In IDDR TRANSFORM
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1d9ffa254
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 952 ; free virtual = 3842
+INFO: [Opt 31-389] Phase Retarget created 112 cells and removed 1081 cells
+INFO: [Opt 31-1021] In phase Retarget, 36 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+Phase 2 Constant propagation | Checksum: 1f6937683
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 959 ; free virtual = 3850
+INFO: [Opt 31-389] Phase Constant propagation created 294 cells and removed 513 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 18f3f6c1e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 959 ; free virtual = 3849
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 3286 cells
+INFO: [Opt 31-1021] In phase Sweep, 106 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 21b381d0c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 957 ; free virtual = 3848
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 21b381d0c
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 957 ; free virtual = 3848
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+INFO: [Opt 31-1287] Pulled Inverter top_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NO_RD_CMD_OPT.I_WRAP_BRST/GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[15]_i_1 into driver instance top_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_RD_CHNL/GEN_NO_RD_CMD_OPT.GEN_DUAL_ADDR_CNT.bram_addr_int[15]_i_4, which resulted in an inversion of 26 pins
+Phase 6 Post Processing Netlist | Checksum: 202e7b4b2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 957 ; free virtual = 3848
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 34 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             112  |            1081  |                                             36  |
+|  Constant propagation         |             294  |             513  |                                             27  |
+|  Sweep                        |               0  |            3286  |                                            106  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               1  |                                             34  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2991.590 ; gain = 0.000 ; free physical = 958 ; free virtual = 3849
+Ending Logic Optimization Task | Checksum: 18bdf6aca
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2991.590 ; gain = 1.000 ; free physical = 958 ; free virtual = 3849
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 45 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 26 newly gated: 27 Total Ports: 90
+Number of Flops added for Enable Generation: 12
+
+Ending PowerOpt Patch Enables Task | Checksum: 1f833181a
+
+Time (s): cpu = 00:00:00.4 ; elapsed = 00:00:00.42 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 868 ; free virtual = 3759
+Ending Power Optimization Task | Checksum: 1f833181a
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 3533.324 ; gain = 541.734 ; free physical = 907 ; free virtual = 3798
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 15f96167e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 939 ; free virtual = 3830
+Ending Final Cleanup Task | Checksum: 15f96167e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 939 ; free virtual = 3830
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 939 ; free virtual = 3830
+Ending Netlist Obfuscation Task | Checksum: 15f96167e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 939 ; free virtual = 3830
+INFO: [Common 17-83] Releasing license: Implementation
+63 Infos, 19 Warnings, 21 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:26 . Memory (MB): peak = 3533.324 ; gain = 786.891 ; free physical = 939 ; free virtual = 3830
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3533.324 ; gain = 0.000 ; free physical = 914 ; free virtual = 3806
+INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+Command: report_drc -file top_wrapper_drc_opted.rpt -pb top_wrapper_drc_opted.pb -rpx top_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 785 ; free virtual = 3685
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13249471c
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 785 ; free virtual = 3685
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 785 ; free virtual = 3685
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ac811ed7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 822 ; free virtual = 3723
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: beed900e
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 777 ; free virtual = 3677
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: beed900e
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 777 ; free virtual = 3677
+Phase 1 Placer Initialization | Checksum: beed900e
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 773 ; free virtual = 3674
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: bd5d8d93
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 764 ; free virtual = 3664
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 725adec3
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:12 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 767 ; free virtual = 3668
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 725adec3
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:13 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 767 ; free virtual = 3668
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1126 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 443 nets or LUTs. Breaked 0 LUT, combined 443 existing LUTs and moved 0 existing LUT
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/s_aresetn or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out. Replicated 9 times.
+WARNING: [Physopt 32-894] Found a constraint with the -through option on pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/s_aresetn or the net immediately connecting to the pin. This constraint will block optimizations for this and all downstream leaf pins.
+INFO: [Physopt 32-232] Optimized 1 net. Created 9 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 9 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 757 ; free virtual = 3658
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 757 ; free virtual = 3658
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            443  |                   443  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            9  |              0  |                     1  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            9  |            443  |                   444  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 221a9310e
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 741 ; free virtual = 3642
+Phase 2.4 Global Placement Core | Checksum: 22e2327d7
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:33 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 741 ; free virtual = 3642
+Phase 2 Global Placement | Checksum: 22e2327d7
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:00:33 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 749 ; free virtual = 3650
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18799f057
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:35 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 757 ; free virtual = 3658
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 241319a6c
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 744 ; free virtual = 3645
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1ebbe86a7
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:39 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 745 ; free virtual = 3646
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 18224f99f
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:00:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 745 ; free virtual = 3646
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1fa2d19f3
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:43 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 738 ; free virtual = 3639
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1dd4e76b7
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:00:53 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 711 ; free virtual = 3612
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1a8bb6c09
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:55 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 712 ; free virtual = 3613
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1ee74a590
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:55 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 712 ; free virtual = 3613
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 2071e9313
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 709 ; free virtual = 3610
+Phase 3 Detail Placement | Checksum: 2071e9313
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 709 ; free virtual = 3610
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2039fda4e
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.385 | TNS=-138.861 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1d7147dcb
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.98 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 785 ; free virtual = 3684
+INFO: [Place 46-33] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rc/u_dma_rc_mem_pfch/SR[0], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 21d9f5586
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 785 ; free virtual = 3684
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2039fda4e
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:01:08 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 789 ; free virtual = 3688
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-1.055. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 208ba3087
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:01:39 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 823 ; free virtual = 3722
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:01:39 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+Phase 4.1 Post Commit Optimization | Checksum: 208ba3087
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:01:39 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 208ba3087
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:01:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                4x4|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 208ba3087
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+Phase 4.3 Placer Reporting | Checksum: 208ba3087
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1e42876d2
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3723
+Ending Placer Task | Checksum: 189406763
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:01:41 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 825 ; free virtual = 3724
+INFO: [Common 17-83] Releasing license: Implementation
+105 Infos, 21 Warnings, 21 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:25 ; elapsed = 00:01:42 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 873 ; free virtual = 3772
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 787 ; free virtual = 3744
+INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 829 ; free virtual = 3742
+INFO: [runtcl-4] Executing : report_io -file top_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.22 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 821 ; free virtual = 3734
+INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_placed.rpt -pb top_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 824 ; free virtual = 3737
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 16.80s |  WALL: 4.86s
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 807 ; free virtual = 3721
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.055 | TNS=-90.151 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1a8e84eb7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 805 ; free virtual = 3719
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.055 | TNS=-90.151 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1a8e84eb7
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 805 ; free virtual = 3718
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.055 | TNS=-90.151 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[8].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[16]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.989 | TNS=-90.387 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[9].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[46]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.989 | TNS=-90.692 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[10].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[47]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.987 | TNS=-90.979 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[68].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[109]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[68]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.987 | TNS=-91.241 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[71].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[112]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[71]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.987 | TNS=-91.621 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[74].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[115]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[74]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.987 | TNS=-91.991 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[27].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[68]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.982 | TNS=-92.416 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[20].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[20]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.982 | TNS=-92.790 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[21].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[21]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.982 | TNS=-93.158 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[25].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[25]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.982 | TNS=-93.613 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[50].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[91]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[50]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-94.005 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[23].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[64]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[23]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-94.251 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[25].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[66]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-94.576 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[51].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[92]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[51]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-94.846 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[56].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[97]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[56]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-95.097 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[2].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[10]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-95.466 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[78].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[119]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[78]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-95.713 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[3].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[11]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.947 | TNS=-95.964 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[22].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[22]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[22]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.943 | TNS=-96.240 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[65].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[106]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[65]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.943 | TNS=-96.550 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[16].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[57]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.942 | TNS=-96.940 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[4].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[12]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.942 | TNS=-97.303 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[6].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[14]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.942 | TNS=-97.685 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[41].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[82]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[41]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-98.068 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[63].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[104]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[63]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-98.486 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[75].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[116]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[75]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-98.867 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[29].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[29]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[29]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.935 | TNS=-99.278 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[30].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[30]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[30]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-99.801 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[59].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[100]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[59]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-100.202 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[76].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[117]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[76]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-100.713 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[18].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[59]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-101.251 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-101.251 |
+Phase 3 Critical Path Optimization | Checksum: 1a8e84eb7
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 809 ; free virtual = 3723
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.928 | TNS=-101.251 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[54].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[95]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[54]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.920 | TNS=-101.628 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[24].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[24]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.920 | TNS=-102.153 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[11].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[48]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.907 | TNS=-102.689 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[70].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[111]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[70]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.907 | TNS=-103.261 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[79].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[121]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[79]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.907 | TNS=-103.875 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[15].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[56]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.907 | TNS=-104.362 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[48].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[89]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[48]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.903 | TNS=-105.011 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[80].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[122]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[80]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.903 | TNS=-105.591 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[13].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[50]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.903 | TNS=-106.183 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[43].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[84]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[43]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.903 | TNS=-106.810 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[55].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[96]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[55]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.902 | TNS=-107.455 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[32].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[73]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[32]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.897 | TNS=-108.071 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[64].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[105]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[64]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.897 | TNS=-108.435 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Q[14]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/force_ready_flush_ff. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/FifoCntrRd_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/empty_ff_reg_0.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/FifoCntrRd[2]_i_3__0
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/empty_ff_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.257 | TNS=-7.060 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_rcp_dat_avl_302_reg[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_spl_len_304[0].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_spl_len_304_reg[0]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_spl_len_304[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.217 | TNS=-6.620 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/rreq_head_rcb_ok_ff_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_rcb_ok_ff[0]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff_reg[1][rcb][7][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.212 | TNS=-6.615 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 34 pins.
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_rcb_ok_ff[0]_i_12_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.198 | TNS=-6.529 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_rcp_dat_avl_302_reg[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.169 | TNS=-6.390 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.161 | TNS=-6.290 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/empty_ff_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/arb_rrq_rdy.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/FifoCntrRd[2]_i_4
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/arb_rrq_rdy. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.149 | TNS=-0.920 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/i___161_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/PCOUT[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___156_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___147_i_5_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___152_i_2_n_0.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___152_i_2
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/i___152_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.131 | TNS=-0.467 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/s_axis_cq\\.tready[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out.  Re-placed instance top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.126 | TNS=-0.431 |
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[18].  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/Head_reg[18]
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/axidma_rrq_arb/Fifowhead.fifoInfo/arb_rrq_pay[18]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.124 | TNS=-0.309 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_pkt_tot_302_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/i___132_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/PCOUT[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/i___119_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/wrq_adr_ld_301_reg_rep__0_0[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/i___123_i_2_n_0.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/i___123_i_2
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[0].gen_rdwr_eng.RDWR_INST/i___123_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.095 | TNS=-0.185 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/s_axis_cq_tready_nxt. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/FSM_sequential_memreqsm_cs[1]_i_2_n_0.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/FSM_sequential_memreqsm_cs[1]_i_2
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/FSM_sequential_memreqsm_cs[1]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.085 | TNS=-0.089 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/clk_sm_cur[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/pcie_7x_i/cfg_interrupt_msienable. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/FSM_sequential_clk_sm_cur[0]_i_2_n_0.  Re-placed instance top_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/FSM_sequential_clk_sm_cur[0]_i_2
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/base/IRQ_INST/FSM_sequential_clk_sm_cur[0]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.004 | TNS=-0.004 |
+INFO: [Physopt 32-702] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_rcb_ok_ff[0]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net top_i/xdma_0/inst/udma_wrapper/dma_top/dma_pcie_req/dma_pcie_rq/RQ_FIFO/rreq_head_info_ff_reg[1][rcb][7][0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.023 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.023 | TNS=0.000 |
+Phase 4 Critical Path Optimization | Checksum: 1a8e84eb7
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 812 ; free virtual = 3726
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 812 ; free virtual = 3726
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.023 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.078  |         90.151  |            0  |              0  |                    58  |           0  |           2  |  00:00:05  |
+|  Total          |          1.078  |         90.151  |            0  |              0  |                    58  |           0  |           3  |  00:00:05  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 812 ; free virtual = 3726
+Ending Physical Synthesis Task | Checksum: 2117d73b1
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 812 ; free virtual = 3726
+INFO: [Common 17-83] Releasing license: Implementation
+321 Infos, 21 Warnings, 21 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 823 ; free virtual = 3737
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 738 ; free virtual = 3708
+INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 779 ; free virtual = 3706
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100tl'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: b5446784 ConstDB: 0 ShapeSum: c9b48416 RouteDB: 0
+Post Restoration Checksum: NetGraph: 16bb0038 NumContArr: c5945ad9 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: dc4f5b11
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 673 ; free virtual = 3600
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: dc4f5b11
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:31 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 634 ; free virtual = 3561
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: dc4f5b11
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:32 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 634 ; free virtual = 3561
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 16307513f
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:40 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 591 ; free virtual = 3518
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.069  | TNS=0.000  | WHS=-0.584 | THS=-2323.000|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00156678 %
+  Global Horizontal Routing Utilization  = 0.0019892 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 32845
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 32845
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 13dfff8cf
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:43 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 580 ; free virtual = 3507
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 13dfff8cf
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:43 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 580 ; free virtual = 3507
+Phase 3 Initial Routing | Checksum: e5949d60
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:47 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 568 ; free virtual = 3496
+INFO: [Route 35-580] Design has 9 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+=============================================================================================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                                                                                                         |
++====================+===================+=============================================================================================================================================================+
+| clk_125mhz         | clk_125mhz        | top_i/xdma_0/inst/udma_wrapper/dma_top/axi4mm_bridge_top_inst/axi4mm_axi_mm_master_top_inst/axi4mm_axi_str_masterbridge_wrrd_inst/s_axis_cq_tready_ff_reg/D |
+| clk_125mhz         | clk_125mhz        | top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_rcp_dat_avl_302_reg[9]/D                           |
+| clk_125mhz         | clk_125mhz        | top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_rcp_dat_avl_302_reg[11]/D                          |
+| clk_125mhz         | clk_125mhz        | top_i/xdma_0/inst/udma_wrapper/dma_top/dma_enable.vul_dma/WR/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/wrq_rcp_dat_avl_302_reg[12]/D                          |
+| clk_125mhz         | clk_125mhz        | top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/pcie_top_i/axi_basic_top/rx_inst/rx_pipeline_inst/trn_rdst_rdy_reg/D           |
++--------------------+-------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4356
+ Number of Nodes with overlaps = 699
+ Number of Nodes with overlaps = 289
+ Number of Nodes with overlaps = 129
+ Number of Nodes with overlaps = 58
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.654 | TNS=-1.129 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 17d0c6969
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:01:24 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 200 ; free virtual = 2992
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 175
+ Number of Nodes with overlaps = 99
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.361 | TNS=-1.079 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2087095bd
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:33 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 204 ; free virtual = 2995
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 294
+ Number of Nodes with overlaps = 130
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.170 | TNS=-0.726 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1d2d2f159
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:01:44 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 201 ; free virtual = 2993
+
+Phase 4.4 Global Iteration 3
+ Number of Nodes with overlaps = 309
+ Number of Nodes with overlaps = 145
+ Number of Nodes with overlaps = 33
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.242 | TNS=-0.741 | WHS=N/A    | THS=N/A    |
+
+Phase 4.4 Global Iteration 3 | Checksum: 21bf7dece
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:51 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 210 ; free virtual = 3002
+Phase 4 Rip-up And Reroute | Checksum: 21bf7dece
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:01:51 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 210 ; free virtual = 3002
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 16b583fb2
+
+Time (s): cpu = 00:03:17 ; elapsed = 00:01:52 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 203 ; free virtual = 2995
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.141 | TNS=-0.144 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1b5b252d2
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:01:53 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 205 ; free virtual = 2997
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1b5b252d2
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:01:53 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 205 ; free virtual = 2997
+Phase 5 Delay and Skew Optimization | Checksum: 1b5b252d2
+
+Time (s): cpu = 00:03:18 ; elapsed = 00:01:53 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 205 ; free virtual = 2997
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1784d41ac
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:55 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 212 ; free virtual = 3004
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.141 | TNS=-0.141 | WHS=0.028  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 17de300db
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:55 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 212 ; free virtual = 3004
+Phase 6 Post Hold Fix | Checksum: 17de300db
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:55 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 216 ; free virtual = 3007
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.18057 %
+  Global Horizontal Routing Utilization  = 8.92278 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 79.2793%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 18745e20c
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:56 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 216 ; free virtual = 3007
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 18745e20c
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:01:56 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 214 ; free virtual = 3006
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1d59cddf1
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:58 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 212 ; free virtual = 3004
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.141 | TNS=-0.141 | WHS=0.028  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1d59cddf1
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:01:59 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 211 ; free virtual = 3003
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:34 ; elapsed = 00:01:59 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 254 ; free virtual = 3046
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+339 Infos, 22 Warnings, 21 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:53 ; elapsed = 00:02:05 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 254 ; free virtual = 3046
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 172 ; free virtual = 3027
+INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 3544.367 ; gain = 0.000 ; free physical = 215 ; free virtual = 2987
+INFO: [runtcl-4] Executing : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+Command: report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:21 ; elapsed = 00:00:06 . Memory (MB): peak = 3575.359 ; gain = 30.992 ; free physical = 216 ; free virtual = 2955
+INFO: [runtcl-4] Executing : report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file top_wrapper_methodology_drc_routed.rpt -pb top_wrapper_methodology_drc_routed.pb -rpx top_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/impl_1/top_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 3575.359 ; gain = 0.000 ; free physical = 220 ; free virtual = 2959
+INFO: [runtcl-4] Executing : report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+Command: report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+351 Infos, 23 Warnings, 21 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 3644.277 ; gain = 68.918 ; free physical = 199 ; free virtual = 2950
+INFO: [runtcl-4] Executing : report_route_status -file top_wrapper_route_status.rpt -pb top_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file top_wrapper_timing_summary_routed.rpt -pb top_wrapper_timing_summary_routed.pb -rpx top_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_wrapper_bus_skew_routed.rpt -pb top_wrapper_bus_skew_routed.pb -rpx top_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 24 13:33:11 2025...
+
+*** Running vivado
+    with args -log top_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_wrapper.tcl -notrace
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source top_wrapper.tcl -notrace
+Command: open_checkpoint top_wrapper_routed.dcp
+INFO: [Device 21-403] Loading part xc7a100tlfgg484-2L
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2613.473 ; gain = 0.000 ; free physical = 1358 ; free virtual = 4111
+INFO: [Netlist 29-17] Analyzing 1758 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2677.504 ; gain = 0.000 ; free physical = 871 ; free virtual = 3624
+Restored from archive | CPU: 2.460000 secs | Memory: 44.927139 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2677.504 ; gain = 0.000 ; free physical = 871 ; free virtual = 3624
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2677.504 ; gain = 0.000 ; free physical = 869 ; free virtual = 3622
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 614 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 50 instances
+  RAM16X1S => RAM32X1S (RAMS32): 13 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 509 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 33 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 9 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2022.1 (64-bit) build 3526262
+open_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2677.504 ; gain = 75.930 ; free physical = 869 ; free virtual = 3622
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/mas_bridge_ram_write_512.MASTER_WRITE_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT1_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT1_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT0_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_h2c_bram.H2C_DAT0_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT1_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT1_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT0_FIFO/xpm_memory_sdpram_inst_loop[1].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/gen_c2h_bram.C2H_DAT0_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <top_i/xdma_0/inst/ram_top/MASTER_READ_BRAM/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst> is part of IP: <top_i/xdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block top_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the top_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block top_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the top_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block top_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the top_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block top_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the top_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block top_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the top_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force top_wrapper.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100tl'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100tl'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nickorlow/vivado/inst_22.01/Vivado/2022.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A2' of cell top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[13].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[14].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[15].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMARSTRAM (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/RSTRAMB (net: top_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_noinit.ram/user_reset_out_repN_2_alias) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_2) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram has an input control pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM18.ram/ENARDEN (net: top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ram_rd_en_i) which is driven by a register (top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/user_reset_out_reg_replica_3) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 18 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[1], top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[1], top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[0], top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2], top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/store_ltssm, top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid... and (the first 15 of 16 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 26 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Bitstream compression saved 12842464 bits.
+Writing bitstream ./top_wrapper.bit...
+Writing bitstream ./top_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:03 ; elapsed = 00:00:34 . Memory (MB): peak = 3295.574 ; gain = 612.133 ; free physical = 722 ; free virtual = 3480
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 24 13:35:31 2025...
