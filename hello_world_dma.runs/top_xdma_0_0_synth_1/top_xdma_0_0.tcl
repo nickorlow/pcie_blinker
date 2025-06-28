@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "top_xdma_0_0_synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -89,12 +90,12 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_ip -quiet /home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0.xci
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_2/xdma_v4_1_17_blk_mem_64_noreg_be_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_1/xdma_v4_1_17_blk_mem_64_reg_be_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/source/top_xdma_0_0_pcie2_ip-PCIE_X0Y0.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_0/synth/top_xdma_0_0_pcie2_ip_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_1/xdma_v4_1_17_blk_mem_64_reg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_2/xdma_v4_1_17_blk_mem_64_noreg_be_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_3/pcie2_fifo_generator_dma_cpl.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/ip_4/pcie2_fifo_generator_tgt_brdg.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/source/top_xdma_0_0_pcie3_7vx_ip.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/synth/top_xdma_0_0_ooc.xdc]

@@ -101,9 +101,6 @@ set_property used_in_implementation false [get_files -all /home/nickorlow/vivado
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/synth/top_xdma_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_bram_ctrl_0_0/top_axi_bram_ctrl_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_1/bd_b43a_psr_aclk_0_board.xdc]
@@ -116,6 +113,13 @@ set_property used_in_implementation false [get_files -all /home/nickorlow/vivado
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_10/bd_b43a_sbn_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/bd_0/ip/ip_11/bd_b43a_m00s2a_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xbar_0/top_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/top_ooc.xdc]
 
 OPTRACE "Adding files" END { }

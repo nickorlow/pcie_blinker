@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-// Date        : Tue Jun 24 12:01:46 2025
+// Date        : Sat Jun 28 00:09:08 2025
 // Host        : media-wawa running 64-bit NixOS 25.05 (Warbler)
 // Command     : write_verilog -force -mode synth_stub
 //               /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/top_xdma_0_0_stub.v

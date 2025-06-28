@@ -9,7 +9,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top_xdma_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2601.594 ; gain = 0.023 ; free physical = 5734 ; free virtual = 7884
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.531 ; gain = 5.961 ; free physical = 6149 ; free virtual = 9490
 Command: synth_design -top top_xdma_0_0 -part xc7a100tlfgg484-2L -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100tl'
@@ -17,12 +17,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tlfgg484-2L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 227048
+INFO: [Synth 8-7075] Helper process launched with PID 19515
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/nickorlow/vivado/inst_22.01/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 WARNING: [Synth 8-2292] literal value truncated to fit in 4 bits [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ipshared/8cd6/hdl/xdma_v4_1_vl_rfs.sv:45133]
 WARNING: [Synth 8-2292] literal value truncated to fit in 4 bits [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ipshared/8cd6/hdl/xdma_v4_1_vl_rfs.sv:45134]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:01:47 . Memory (MB): peak = 2601.594 ; gain = 0.000 ; free physical = 5873 ; free virtual = 7845
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2607.531 ; gain = 0.000 ; free physical = 4291 ; free virtual = 7682
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/synth/top_xdma_0_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_0_core_top' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xdma_0_0/xdma_v4_1/hdl/verilog/top_xdma_0_0_core_top.sv:60]
@@ -1025,18 +1025,18 @@ WARNING: [Synth 8-7129] Port pipe_tx4_data[0] in module top_xdma_0_0_pcie2_ip_gt
 WARNING: [Synth 8-7129] Port pipe_tx4_elec_idle in module top_xdma_0_0_pcie2_ip_gt_top is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:02:15 . Memory (MB): peak = 2979.688 ; gain = 378.094 ; free physical = 6709 ; free virtual = 7714
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 2980.625 ; gain = 373.094 ; free physical = 4361 ; free virtual = 7799
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:02:17 . Memory (MB): peak = 2979.688 ; gain = 378.094 ; free physical = 6737 ; free virtual = 7743
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2980.625 ; gain = 373.094 ; free physical = 4374 ; free virtual = 7812
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:36 ; elapsed = 00:02:17 . Memory (MB): peak = 2979.688 ; gain = 378.094 ; free physical = 6737 ; free virtual = 7743
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 2980.625 ; gain = 373.094 ; free physical = 4374 ; free virtual = 7812
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2979.688 ; gain = 0.000 ; free physical = 7464 ; free virtual = 8533
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2980.625 ; gain = 0.000 ; free physical = 5229 ; free virtual = 8667
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1102,15 +1102,20 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/top_xdma_0_0
 INFO: [Project 1-1714] 21 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3103.500 ; gain = 0.000 ; free physical = 7783 ; free virtual = 8867
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3104.102 ; gain = 0.000 ; free physical = 4978 ; free virtual = 8417
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3106.469 ; gain = 2.969 ; free physical = 7787 ; free virtual = 8871
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3107.070 ; gain = 2.969 ; free physical = 4980 ; free virtual = 8419
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:02:41 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 12234 ; free virtual = 13380
+Finished Constraint Validation : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 5352 ; free virtual = 8792
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rdliteSM_cs_reg' in module 'xdma_v4_1_17_axi_mm_master_rd_br_v'
+INFO: [Synth 8-802] inferred FSM for state register 'tar_sm_mr_cur_reg' in module 'xdma_v4_1_17_vul_tar'
+INFO: [Synth 8-802] inferred FSM for state register 'msix_init_state_reg' in module 'xdma_v4_1_17_udma_msix'
+INFO: [Synth 8-802] inferred FSM for state register 'intr_issue_state_reg' in module 'xdma_v4_1_17_pcie_userapp_tgt_intr_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'clk_sm_cur_reg' in module 'xdma_v4_1_17_vul_irq'
 INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
 INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft__parameterized0'
 INFO: [Synth 8-802] inferred FSM for state register 'transfer_SM_reg' in module 'top_xdma_0_0_tx_mux'
@@ -1407,7 +1412,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'resetovrd.fsm_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'txsync_fsm.fsm_tx_reg' using encoding 'one-hot' in module 'top_xdma_0_0_pcie2_ip_pipe_sync'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:03:03 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 10351 ; free virtual = 12224
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:36 ; elapsed = 00:01:43 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 1754 ; free virtual = 5204
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1993,7 +1998,7 @@ INFO: [Synth 8-3332] Sequential element (pipe_lane[3].pipe_eq.pipe_eq_i/rxeq_sca
 INFO: [Synth 8-3332] Sequential element (pipe_lane[3].pipe_eq.pipe_eq_i/FSM_onehot_fsm_rx_reg[0]) is unused and will be removed from module top_xdma_0_0_pcie2_ip_pipe_wrapper.
 INFO: [Synth 8-3332] Sequential element (pipe_lane[3].pipe_sync_i/FSM_onehot_txsync_fsm.fsm_tx_reg[0]) is unused and will be removed from module top_xdma_0_0_pcie2_ip_pipe_wrapper.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:04:02 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6169 ; free virtual = 8210
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:11 ; elapsed = 00:02:40 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 1092 ; free virtual = 4620
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2161,7 +2166,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:58 ; elapsed = 00:04:10 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 5873 ; free virtual = 7969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:20 ; elapsed = 00:02:49 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 911 ; free virtual = 4494
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -2170,7 +2175,7 @@ WARNING: [Synth 8-3332] Sequential element (IRQ_INST/msix_internal_xdma.msix_ctl
 WARNING: [Synth 8-3332] Sequential element (IRQ_INST/msix_internal_xdma.msix_ctl/FSM_onehot_intr_issue_state_reg[0]) is unused and will be removed from module xdma_v4_1_17_dma_base.
 WARNING: [Synth 8-3332] Sequential element (IRQ_INST/msix_internal_xdma.msix_ctl/FSM_onehot_intr_issue_state_reg[3]) is unused and will be removed from module xdma_v4_1_17_dma_base.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:19 ; elapsed = 00:04:33 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6083 ; free virtual = 8168
+Finished Timing Optimization : Time (s): cpu = 00:02:46 ; elapsed = 00:03:17 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 848 ; free virtual = 4432
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2325,11 +2330,10 @@ INFO: [Synth 8-7052] The timing for the instance inst/udma_wrapper/dma_top/dma_e
 INFO: [Synth 8-7052] The timing for the instance inst/udma_wrapper/dma_top/dma_enable.vul_dma/RD/gen_rdwr_loop[1].gen_rdwr_eng.RDWR_INST/rrq_wadr_nn1_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7067] Removed DRAM instance inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/axidma_wb_arb/Fifowhead.fifoInfo/MemArray_reg_0_3_24_29 from module xdma_v4_1_17_udma_top__GCB2_tempName due to constant propagation
 INFO: [Synth 8-7067] Removed DRAM instance inst/udma_wrapper/dma_topi_4/dma_top/dma_enable.wb_eng.dma_pcie_wb_eng/WB_DAT_FIFO/MemArray_reg_0_3_24_29 from module xdma_v4_1_17_udma_top__GCB2_tempName due to constant propagation
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-7052] The timing for the instance inst/i_0/ram_top/mas_bridge_ram_write_512.MASTER_WRITE_FIFO/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 INFO: [Synth 8-7052] The timing for the instance inst/i_0/ram_top/MASTER_READ_BRAM/xpm_memory_sdpram_inst_loop[0].xpm_memory_sdpram_inst/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:27 ; elapsed = 00:04:48 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6039 ; free virtual = 8196
+Finished Technology Mapping : Time (s): cpu = 00:02:58 ; elapsed = 00:03:37 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 232 ; free virtual = 3586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2418,37 +2422,37 @@ INFO: [Synth 8-3295] tying undriven pin blk_cfg_ext_write_byte_enable_inferred:i
 INFO: [Synth 8-3295] tying undriven pin blk_cfg_ext_write_byte_enable_inferred:in0[1] to constant 0
 INFO: [Synth 8-3295] tying undriven pin blk_cfg_ext_write_byte_enable_inferred:in0[0] to constant 0
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:37 ; elapsed = 00:04:58 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 5681 ; free virtual = 7941
+Finished IO Insertion : Time (s): cpu = 00:03:10 ; elapsed = 00:03:50 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 245 ; free virtual = 3662
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:37 ; elapsed = 00:04:58 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 5681 ; free virtual = 7941
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:10 ; elapsed = 00:03:50 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 245 ; free virtual = 3662
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:44 ; elapsed = 00:05:06 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6109 ; free virtual = 8368
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:19 ; elapsed = 00:03:59 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 261 ; free virtual = 3679
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:44 ; elapsed = 00:05:06 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6109 ; free virtual = 8368
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:19 ; elapsed = 00:03:59 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 260 ; free virtual = 3678
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:45 ; elapsed = 00:05:07 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6112 ; free virtual = 8372
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:21 ; elapsed = 00:04:01 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 261 ; free virtual = 3678
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:45 ; elapsed = 00:05:07 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6111 ; free virtual = 8371
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:21 ; elapsed = 00:04:01 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 261 ; free virtual = 3678
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -2512,19 +2516,19 @@ Report Cell Usage:
 |35    |FDSE          |   213|
 +------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:46 ; elapsed = 00:05:07 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 6111 ; free virtual = 8371
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:21 ; elapsed = 00:04:01 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 257 ; free virtual = 3674
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 27528 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:32 ; elapsed = 00:04:54 . Memory (MB): peak = 3106.469 ; gain = 378.094 ; free physical = 11117 ; free virtual = 13377
-Synthesis Optimization Complete : Time (s): cpu = 00:02:52 ; elapsed = 00:05:11 . Memory (MB): peak = 3106.469 ; gain = 504.875 ; free physical = 11147 ; free virtual = 13382
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:04 ; elapsed = 00:03:47 . Memory (MB): peak = 3107.070 ; gain = 373.094 ; free physical = 5265 ; free virtual = 8683
+Synthesis Optimization Complete : Time (s): cpu = 00:03:27 ; elapsed = 00:04:07 . Memory (MB): peak = 3107.070 ; gain = 499.539 ; free physical = 5296 ; free virtual = 8688
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3106.469 ; gain = 0.000 ; free physical = 11137 ; free virtual = 13372
+Netlist sorting complete. Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.64 . Memory (MB): peak = 3107.070 ; gain = 0.000 ; free physical = 5272 ; free virtual = 8664
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 1771 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3130.480 ; gain = 0.000 ; free physical = 11076 ; free virtual = 13310
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3131.082 ; gain = 0.000 ; free physical = 5201 ; free virtual = 8594
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 632 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32(x2)): 50 instances
@@ -2533,14 +2537,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 33 instances
   RAM64X1S => RAM64X1S (RAMS64E): 9 instances
 
-Synth Design complete, checksum: 2bd0d034
+Synth Design complete, checksum: e5d2c79b
 INFO: [Common 17-83] Releasing license: Synthesis
-680 Infos, 396 Warnings, 0 Critical Warnings and 0 Errors encountered.
+679 Infos, 396 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:05 ; elapsed = 00:05:25 . Memory (MB): peak = 3130.480 ; gain = 528.887 ; free physical = 11419 ; free virtual = 13653
+synth_design: Time (s): cpu = 00:03:43 ; elapsed = 00:04:23 . Memory (MB): peak = 3131.082 ; gain = 523.551 ; free physical = 5553 ; free virtual = 8945
 INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/top_xdma_0_0_synth_1/top_xdma_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_xdma_0_0, cache-ID = d86a665de0dcbae9
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP top_xdma_0_0, cache-ID = c854e023025097d8
 INFO: [Coretcl 2-1174] Renamed 187 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/top_xdma_0_0_synth_1/top_xdma_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_xdma_0_0_utilization_synth.rpt -pb top_xdma_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 24 12:01:52 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 28 00:09:15 2025...

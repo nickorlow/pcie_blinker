@@ -20,16 +20,25 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_blk_mem
 # IP: bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_util_vector_logic_0_0 || ORIG_REF_NAME==top_util_vector_logic_0_0} -quiet] -quiet
 
-# IP: bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_axi_gpio_0_0 || ORIG_REF_NAME==top_axi_gpio_0_0} -quiet] -quiet
-
 # IP: bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_util_ds_buf_0 || ORIG_REF_NAME==top_util_ds_buf_0} -quiet] -quiet
 
 # IP: bd/top/ip/top_axi_smc_0/top_axi_smc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_axi_smc_0 || ORIG_REF_NAME==top_axi_smc_0} -quiet] -quiet
 
+# IP: bd/top/ip/top_xbar_0/top_xbar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_xbar_0 || ORIG_REF_NAME==top_xbar_0} -quiet] -quiet
+
 # IP: bd/top/ip/top_xdma_0_axi_periph_0/top_xdma_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_xdma_0_axi_periph_0 || ORIG_REF_NAME==top_xdma_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_axi_gpio_1_0 || ORIG_REF_NAME==top_axi_gpio_1_0} -quiet] -quiet
+
+# IP: bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_axi_gpio_0_0 || ORIG_REF_NAME==top_axi_gpio_0_0} -quiet] -quiet
+
+# IP: bd/top/ip/top_c_addsub_0_0/top_c_addsub_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==top_c_addsub_0_0 || ORIG_REF_NAME==top_c_addsub_0_0} -quiet] -quiet
 
 # XDC: /home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/top_ooc.xdc

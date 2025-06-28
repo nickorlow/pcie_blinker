@@ -9,7 +9,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.566 ; gain = 5.961 ; free physical = 1450 ; free virtual = 4871
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.566 ; gain = 5.961 ; free physical = 5559 ; free virtual = 9194
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/nickorlow/vivado/inst_22.01/Vivado/2022.1/data/ip'.
@@ -25,63 +25,86 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 417254
+INFO: [Synth 8-7075] Helper process launched with PID 141225
 WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/home/nickorlow/vivado/inst_22.01/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 158 ; free virtual = 3085
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 3813 ; free virtual = 7449
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_wrapper' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/hdl/top_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'top' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:144]
-INFO: [Synth 8-6157] synthesizing module 'top_axi_bram_ctrl_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_bram_ctrl_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_axi_bram_ctrl_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_bram_ctrl_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_axi_gpio_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_axi_gpio_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_axi_smc_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_smc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_axi_smc_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_axi_smc_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'top_axi_smc_0' is unconnected for instance 'axi_smc' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:371]
-WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'top_axi_smc_0' is unconnected for instance 'axi_smc' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:371]
-WARNING: [Synth 8-7023] instance 'axi_smc' of module 'top_axi_smc_0' has 72 connections declared, but only 70 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:371]
-INFO: [Synth 8-6157] synthesizing module 'top_blk_mem_gen_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_blk_mem_gen_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_blk_mem_gen_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_blk_mem_gen_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_util_ds_buf_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_util_ds_buf_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_util_ds_buf_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_util_ds_buf_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'top_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:457]
-WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'top_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:457]
-INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_util_vector_logic_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_util_vector_logic_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_xdma_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'top_xdma_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-417119-media-wawa/realtime/top_xdma_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-WARNING: [Synth 8-7071] port 'msi_enable' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-WARNING: [Synth 8-7071] port 'm_axil_awprot' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-WARNING: [Synth 8-7071] port 'm_axil_arprot' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-WARNING: [Synth 8-7023] instance 'xdma_0' of module 'top_xdma_0_0' has 67 connections declared, but only 62 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:464]
-INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_axi_periph_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:570]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_110C0LX' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:12]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_110C0LX' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'top_xdma_0_axi_periph_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:570]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:144]
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:422]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_bram_ctrl_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_bram_ctrl_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_bram_ctrl_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_bram_ctrl_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_gpio_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_gpio_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_gpio_1_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_gpio_1_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_gpio_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_axi_smc_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_smc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_axi_smc_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_axi_smc_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'M00_AXI_awqos' of module 'top_axi_smc_0' is unconnected for instance 'axi_smc' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:690]
+WARNING: [Synth 8-7071] port 'M00_AXI_arqos' of module 'top_axi_smc_0' is unconnected for instance 'axi_smc' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:690]
+WARNING: [Synth 8-7023] instance 'axi_smc' of module 'top_axi_smc_0' has 72 connections declared, but only 70 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:690]
+INFO: [Synth 8-6157] synthesizing module 'top_blk_mem_gen_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_blk_mem_gen_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_blk_mem_gen_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_c_addsub_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_c_addsub_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_c_addsub_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_c_addsub_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_util_ds_buf_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_util_ds_buf_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_ds_buf_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_util_ds_buf_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'IBUF_DS_ODIV2' of module 'top_util_ds_buf_0' is unconnected for instance 'util_ds_buf' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:779]
+WARNING: [Synth 8-7023] instance 'util_ds_buf' of module 'top_util_ds_buf_0' has 4 connections declared, but only 3 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:779]
+INFO: [Synth 8-6157] synthesizing module 'top_util_vector_logic_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_util_vector_logic_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_util_vector_logic_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_xdma_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_xdma_0_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_xdma_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'usr_irq_ack' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:786]
+WARNING: [Synth 8-7071] port 'msi_enable' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:786]
+WARNING: [Synth 8-7071] port 'msi_vector_width' of module 'top_xdma_0_0' is unconnected for instance 'xdma_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:786]
+WARNING: [Synth 8-7023] instance 'xdma_0' of module 'top_xdma_0_0' has 67 connections declared, but only 64 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:786]
+INFO: [Synth 8-6157] synthesizing module 'top_xdma_0_axi_periph_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:915]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_CC0R3J' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_CC0R3J' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1V47YY2' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1V47YY2' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:144]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_110C0LX' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:276]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_110C0LX' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:276]
+INFO: [Synth 8-6157] synthesizing module 'top_xbar_0' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'top_xbar_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/.Xil/Vivado-141069-media-wawa/realtime/top_xbar_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'top_xbar_0' is unconnected for instance 'xbar' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:1324]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'top_xbar_0' is unconnected for instance 'xbar' [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:1324]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'top_xbar_0' has 40 connections declared, but only 38 given [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:1324]
+INFO: [Synth 8-6155] done synthesizing module 'top_xdma_0_axi_periph_0' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:915]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/synth/top.v:422]
 INFO: [Synth 8-6155] done synthesizing module 'top_wrapper' (0#1) [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/hdl/top_wrapper.v:12]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_110C0LX is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_110C0LX is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ACLK in module s00_couplers_imp_110C0LX is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S_ARESETN in module s00_couplers_imp_110C0LX is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1V47YY2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1V47YY2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1V47YY2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1V47YY2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_CC0R3J is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_CC0R3J is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_CC0R3J is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_CC0R3J is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 1139 ; free virtual = 4028
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 4769 ; free virtual = 8405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 1139 ; free virtual = 4028
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 4769 ; free virtual = 8405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 1139 ; free virtual = 4028
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 4769 ; free virtual = 8405
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 1139 ; free virtual = 4028
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2607.566 ; gain = 0.000 ; free physical = 4769 ; free virtual = 8405
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -94,12 +117,18 @@ Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sou
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0/top_blk_mem_gen_0_0_in_context.xdc] for cell 'top_i/blk_mem_gen_0'
 Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0/top_util_vector_logic_0_0_in_context.xdc] for cell 'top_i/util_vector_logic_0'
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_vector_logic_0_0/top_util_vector_logic_0_0/top_util_vector_logic_0_0_in_context.xdc] for cell 'top_i/util_vector_logic_0'
-Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0/top_axi_gpio_0_0_in_context.xdc] for cell 'top_i/axi_gpio_0'
-Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0/top_axi_gpio_0_0_in_context.xdc] for cell 'top_i/axi_gpio_0'
 Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0/top_util_ds_buf_0_in_context.xdc] for cell 'top_i/util_ds_buf'
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_util_ds_buf_0/top_util_ds_buf_0/top_util_ds_buf_0_in_context.xdc] for cell 'top_i/util_ds_buf'
 Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/top_axi_smc_0/top_axi_smc_0_in_context.xdc] for cell 'top_i/axi_smc'
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_smc_0/top_axi_smc_0/top_axi_smc_0_in_context.xdc] for cell 'top_i/axi_smc'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xbar_0/top_xbar_0/top_xbar_0_in_context.xdc] for cell 'top_i/xdma_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_xbar_0/top_xbar_0/top_xbar_0_in_context.xdc] for cell 'top_i/xdma_0_axi_periph/xbar'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0/top_axi_gpio_1_0_in_context.xdc] for cell 'top_i/axi_gpio_1'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_1_0/top_axi_gpio_1_0/top_axi_gpio_1_0_in_context.xdc] for cell 'top_i/axi_gpio_1'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0/top_axi_gpio_0_0_in_context.xdc] for cell 'top_i/axi_gpio_0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_axi_gpio_0_0/top_axi_gpio_0_0/top_axi_gpio_0_0_in_context.xdc] for cell 'top_i/axi_gpio_0'
+Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_c_addsub_0_0/top_c_addsub_0_0/top_c_addsub_0_1_in_context.xdc] for cell 'top_i/c_addsub_0'
+Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.gen/sources_1/bd/top/ip/top_c_addsub_0_0/top_c_addsub_0_0/top_c_addsub_0_1_in_context.xdc] for cell 'top_i/c_addsub_0'
 Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc]
 WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:5]
 WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[0]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:6]
@@ -109,16 +138,16 @@ WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[1]'. [/home/nickorlow/vi
 WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:13]
 WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:14]
 WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[1]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:15]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:19]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:20]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:21]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:22]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:26]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:27]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:28]
-WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[2]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_rxp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txn[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'pcie_mgt_txp[3]'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'pcie_clkreq_l'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:35]
 WARNING: [Vivado 12-584] No ports matched 'pcie_clkreq_l'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:36]
-WARNING: [Vivado 12-584] No ports matched 'pcie_clkreq_l'. [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc:37]
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.srcs/constrs_1/new/early.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_wrapper_propImpl.xdc].
@@ -131,24 +160,25 @@ Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/sy
 Finished Parsing XDC File [/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 1135 ; free virtual = 4024
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 4815 ; free virtual = 8451
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 1135 ; free virtual = 4024
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 4815 ; free virtual = 8451
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'top_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'top_i/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'top_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1174 ; free virtual = 4063
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4780 ; free virtual = 8416
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tlfgg484-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1174 ; free virtual = 4063
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4780 ; free virtual = 8416
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -162,15 +192,18 @@ Applied set_property KEEP_HIERARCHY = SOFT for top_i/xdma_0. (constraint file  a
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_bram_ctrl_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/blk_mem_gen_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_vector_logic_0. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_gpio_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/util_ds_buf. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_smc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/xdma_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for top_i/xdma_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for top_i/c_addsub_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1174 ; free virtual = 4063
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4780 ; free virtual = 8416
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1174 ; free virtual = 4064
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4780 ; free virtual = 8417
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -192,32 +225,32 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ACLK in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port S00_ARESETN in module top_xdma_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1173 ; free virtual = 4067
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4786 ; free virtual = 8427
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1100 ; free virtual = 3994
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4726 ; free virtual = 8366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1100 ; free virtual = 3994
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4726 ; free virtual = 8366
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1076 ; free virtual = 3971
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4711 ; free virtual = 8352
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -235,37 +268,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -275,13 +308,16 @@ Report BlackBoxes:
 +------+--------------------------+----------+
 |      |BlackBox name             |Instances |
 +------+--------------------------+----------+
-|1     |top_axi_bram_ctrl_0_0     |         1|
-|2     |top_axi_gpio_0_0          |         1|
-|3     |top_axi_smc_0             |         1|
-|4     |top_blk_mem_gen_0_0       |         1|
-|5     |top_util_ds_buf_0         |         1|
-|6     |top_util_vector_logic_0_0 |         1|
-|7     |top_xdma_0_0              |         1|
+|1     |top_xbar_0                |         1|
+|2     |top_axi_bram_ctrl_0_0     |         1|
+|3     |top_axi_gpio_0_0          |         1|
+|4     |top_axi_gpio_1_0          |         1|
+|5     |top_axi_smc_0             |         1|
+|6     |top_blk_mem_gen_0_0       |         1|
+|7     |top_c_addsub_0_0          |         1|
+|8     |top_util_ds_buf_0         |         1|
+|9     |top_util_vector_logic_0_0 |         1|
+|10    |top_xdma_0_0              |         1|
 +------+--------------------------+----------+
 
 Report Cell Usage: 
@@ -290,33 +326,36 @@ Report Cell Usage:
 +------+------------------------+------+
 |1     |top_axi_bram_ctrl_0     |     1|
 |2     |top_axi_gpio_0          |     1|
-|3     |top_axi_smc             |     1|
-|4     |top_blk_mem_gen_0       |     1|
-|5     |top_util_ds_buf         |     1|
-|6     |top_util_vector_logic_0 |     1|
-|7     |top_xdma_0              |     1|
-|8     |IBUF                    |     9|
-|9     |OBUF                    |    11|
+|3     |top_axi_gpio_1          |     1|
+|4     |top_axi_smc             |     1|
+|5     |top_blk_mem_gen_0       |     1|
+|6     |top_c_addsub_0          |     1|
+|7     |top_util_ds_buf         |     1|
+|8     |top_util_vector_logic_0 |     1|
+|9     |top_xbar                |     1|
+|10    |top_xdma_0              |     1|
+|11    |IBUF                    |     9|
+|12    |OBUF                    |    11|
 +------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1091 ; free virtual = 3986
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4723 ; free virtual = 8364
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 1134 ; free virtual = 4028
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1134 ; free virtual = 4028
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 4771 ; free virtual = 8412
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4771 ; free virtual = 8412
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 1227 ; free virtual = 4122
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 4853 ; free virtual = 8494
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 1170 ; free virtual = 4065
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2671.598 ; gain = 0.000 ; free physical = 4797 ; free virtual = 8438
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: f7656efe
+Synth Design complete, checksum: eba9c1e7
 INFO: [Common 17-83] Releasing license: Synthesis
-45 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+55 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 1347 ; free virtual = 4242
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 2671.598 ; gain = 64.031 ; free physical = 4937 ; free virtual = 8578
 INFO: [Common 17-1381] The checkpoint '/home/nickorlow/vivado/hello_world_dma/hello_world_dma.runs/synth_1/top_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_wrapper_utilization_synth.rpt -pb top_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun 24 13:26:14 2025...
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 28 02:35:28 2025...

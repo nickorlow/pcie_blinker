@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date         : Tue Jun 24 13:32:53 2025
+| Date         : Sat Jun 28 02:42:03 2025
 | Host         : media-wawa running 64-bit NixOS 25.05 (Warbler)
 | Command      : report_drc -file top_wrapper_drc_routed.rpt -pb top_wrapper_drc_routed.pb -rpx top_wrapper_drc_routed.rpx
 | Design       : top_wrapper
@@ -58,7 +58,7 @@ Related violations: <none>
 
 PDCN-1569#1 Warning
 LUT equation term check  
-Used physical LUT pin 'A2' of cell top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Used physical LUT pin 'A1' of cell top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A6)+((~A6)*(~A4)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
 Related violations: <none>
 
 PDCN-1569#2 Warning
@@ -175,13 +175,13 @@ RTSTAT-10#1 Warning
 No routable loads  
 18 net(s) have no routable loads. The problem bus(es) and/or net(s) are top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/store_ltssm,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
-top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[1],
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/dma_cpl_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0],
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb,
 top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/top_xdma_0_0_axi_stream_intf_i/top_xdma_0_0_rx_demux_i/tgt_brdg_fifo_inst/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i,

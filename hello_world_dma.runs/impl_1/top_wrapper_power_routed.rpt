@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
-| Date             : Tue Jun 24 13:33:07 2025
+| Date             : Sat Jun 28 02:42:18 2025
 | Host             : media-wawa running 64-bit NixOS 25.05 (Warbler)
 | Command          : report_power -file top_wrapper_power_routed.rpt -pb top_wrapper_power_summary_routed.pb -rpx top_wrapper_power_routed.rpx
 | Design           : top_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.072        |
+| Total On-Chip Power (W)  | 1.081        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.974        |
+| Dynamic (W)              | 0.983        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 2.7          |
 | Max Ambient (C)          | 97.1         |
@@ -52,26 +52,26 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.088 |        6 |       --- |             --- |
-| Slice Logic              |     0.052 |    45381 |       --- |             --- |
-|   LUT as Logic           |     0.042 |    16641 |     63400 |           26.25 |
-|   Register               |     0.004 |    19843 |    126800 |           15.65 |
-|   LUT as Distributed RAM |     0.004 |     2168 |     19000 |           11.41 |
-|   CARRY4                 |     0.002 |      892 |     15850 |            5.63 |
+| Clocks                   |     0.090 |        6 |       --- |             --- |
+| Slice Logic              |     0.054 |    45850 |       --- |             --- |
+|   LUT as Logic           |     0.045 |    16783 |     63400 |           26.47 |
+|   LUT as Distributed RAM |     0.004 |     2192 |     19000 |           11.54 |
+|   Register               |     0.004 |    20052 |    126800 |           15.81 |
+|   CARRY4                 |     0.002 |      893 |     15850 |            5.63 |
 |   F7/F8 Muxes            |    <0.001 |      206 |     63400 |            0.32 |
 |   LUT as Shift Register  |    <0.001 |       38 |     19000 |            0.20 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |      521 |       --- |             --- |
+|   Others                 |     0.000 |      545 |       --- |             --- |
 |   BUFR                   |     0.000 |        1 |       120 |            0.83 |
-| Signals                  |     0.070 |    32841 |       --- |             --- |
-| Block RAM                |     0.071 |     40.5 |       135 |           30.00 |
+| Signals                  |     0.072 |    33128 |       --- |             --- |
+| Block RAM                |     0.073 |     40.5 |       135 |           30.00 |
 | MMCM                     |     0.107 |        1 |         6 |           16.67 |
-| I/O                      |     0.003 |        4 |       285 |            1.40 |
+| I/O                      |     0.004 |        4 |       285 |            1.40 |
 | GTP                      |     0.555 |        4 |       --- |             --- |
 | Hard IPs                 |     0.028 |        1 |       --- |             --- |
 |   PCIE                   |     0.028 |        1 |         1 |          100.00 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     1.072 |          |           |                 |
+| Total                    |     1.081 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,7 +81,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       0.900 |     0.396 |       0.384 |      0.012 |       NA    | Unspecified | NA         |
+| Vccint    |       0.900 |     0.405 |       0.393 |      0.012 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -150,19 +150,21 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------+-----------+
-| Name                | Power (W) |
-+---------------------+-----------+
-| top_wrapper         |     0.974 |
-|   top_i             |     0.971 |
-|     axi_bram_ctrl_0 |     0.003 |
-|       U0            |     0.003 |
-|     axi_smc         |     0.010 |
-|       inst          |     0.010 |
-|     blk_mem_gen_0   |     0.009 |
-|       U0            |     0.009 |
-|     xdma_0          |     0.949 |
-|       inst          |     0.949 |
-+---------------------+-----------+
++-----------------------+-----------+
+| Name                  | Power (W) |
++-----------------------+-----------+
+| top_wrapper           |     0.983 |
+|   top_i               |     0.979 |
+|     axi_bram_ctrl_0   |     0.003 |
+|       U0              |     0.003 |
+|     axi_smc           |     0.010 |
+|       inst            |     0.010 |
+|     blk_mem_gen_0     |     0.011 |
+|       U0              |     0.011 |
+|     xdma_0            |     0.953 |
+|       inst            |     0.953 |
+|     xdma_0_axi_periph |     0.001 |
+|       xbar            |     0.001 |
++-----------------------+-----------+
 
 

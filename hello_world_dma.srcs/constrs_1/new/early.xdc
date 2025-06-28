@@ -15,7 +15,6 @@ set_property PACKAGE_PIN A4 [get_ports {pcie_mgt_txn[1]}]
 set_property PACKAGE_PIN B4 [get_ports {pcie_mgt_txp[1]}]
 
 # PCIe lane 2
-set_property LOC GTPE2_CHANNEL_X0Y5 [get_cells {top_i/xdma_0/inst/top_xdma_0_0_pcie2_to_pcie3_wrapper_i/pcie2_ip_i/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtp_channel.gtpe2_channel_i}]
 set_property PACKAGE_PIN C11 [get_ports {pcie_mgt_rxn[2]}]
 set_property PACKAGE_PIN D11 [get_ports {pcie_mgt_rxp[2]}]
 set_property PACKAGE_PIN C5 [get_ports {pcie_mgt_txn[2]}]
@@ -37,6 +36,7 @@ set_property PACKAGE_PIN G1 [get_ports {pcie_clkreq_l}]
 set_property IOSTANDARD LVCMOS33 [get_ports {pcie_clkreq_l}]
 set_property PACKAGE_PIN J1 [get_ports reset_rtl_0]
 set_property IOSTANDARD LVCMOS33 [get_ports reset_rtl_0]
+
 
 
 
